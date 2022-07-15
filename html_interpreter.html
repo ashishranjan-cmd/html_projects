@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Live HTML Interpreter</title>
+	<link rel='stylesheet' href='html_interpreter.css' type='text/css'>
+	<script type="text/javascript">
+		function txtarea(){
+			let code = document.getElementById("txtarea");
+			let output = document.getElementById("output")
+			output.innerHTML = code.value;
+		}
+	</script>
+</head>
+<body>
+	<img id = "img1" src="wallhaven-j5op6p_5120x1440.png" /></br>
+
+	<p class="para1">Live HTML Interpreter : </p>
+
+	<textarea id="txtarea" placeholder="Type HTML/CSS code here..." rows="20" onkeyup="txtarea()"></textarea>
+
+	<p class="para1">Output : </p>
+
+	<div class="text-area" id="output" data-placeholder="Output area..." contenteditable="False" ></div>
+</body>
+</html>
